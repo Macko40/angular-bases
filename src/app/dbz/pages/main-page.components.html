@@ -1,0 +1,21 @@
+<h1>DBZ Personajes</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <!-- las llaves cuadradas indican que estoy trabajando con parametros -->
+    <dbz-list
+      [characterList]="dbzService.characters"
+      (onDelete)="dbzService.onDeleteCharacter($event)"
+
+    ></dbz-list>
+  </div>
+
+  <div class="col">
+    <!-- los Parentisis indican que estoy trabajando eventos -->
+      <!-- angular sabe que el valor que esta emitiendo onNewCharacter lo va a recibir en ($event)
+      al pararnos encima de $event dira que es de tipo Character
+      -->
+    <dbz-add-character (onNewCharacter)="dbzService.onNewCharacter($event)" ></dbz-add-character>
+  </div>
+</div>
