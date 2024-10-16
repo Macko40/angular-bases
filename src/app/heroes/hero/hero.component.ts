@@ -7,11 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
   public name: string = 'iroman';
-<<<<<<< HEAD
-  public age: number = 45;
-=======
   public age:  number = 45;
->>>>>>> 70abbe9 (Repasando seccion 4)
 
 
 
